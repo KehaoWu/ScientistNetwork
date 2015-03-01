@@ -7,9 +7,9 @@
 An idea that to illustrate social network of scientists using R  comes into my mind.  [My Blog](http://blog.sina.com.cn/s/blog_403aa80a0102vt0j.html)
 
 ![alt text](ScientistNetwork.jpeg "ScientistNetwork")
-In thie picture, you could find some funny phenomenon. Such as, some guys whose name is very similar to Rao Y have appeared in this social network. I am not sure whether it come from bugs or it could reveal some facts.
+In this picture, you could find some funny phenomenons. Such as, some guys whose name are very similar to Rao Y have appeared in this social network. I am not sure whether it results from bugs or it could reveal some facts.
 
-- The co-author relationship maybe could tell us something about their social network. Thus, I obtained the query result from pubmed with Entrez Programming Utilities. More details about Entrez Programming Utilities, please [see](http://www.ncbi.nlm.nih.gov/books/NBK25501/)
+- The co-author relationship maybe tell us something about their social network. Thus, I obtained the query result from pubmed with Entrez Programming Utilities. More details about Entrez Programming Utilities, please [see](http://www.ncbi.nlm.nih.gov/books/NBK25501/)
 
 ![alt text](th-helpeutils-lrg.png "E-utilities")
 
