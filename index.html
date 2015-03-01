@@ -1,0 +1,114 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Scientistnetwork</title>
+  <meta name="description" content="An idea comes into my mind. To illustrate social network of scientists using R. ">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Scientistnetwork</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">An idea comes into my mind. To illustrate social network of scientists using R. </p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/KehaoWu/ScientistNetwork/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/KehaoWu/ScientistNetwork/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/KehaoWu/ScientistNetwork" class="code">View Scientistnetwork on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="scientistnetwork" class="anchor" href="#scientistnetwork" aria-hidden="true"><span class="octicon octicon-link"></span></a>ScientistNetwork</h1>
+
+<h3>
+<a id="author-kehao-wu" class="anchor" href="#author-kehao-wu" aria-hidden="true"><span class="octicon octicon-link"></span></a>author: "Kehao Wu"</h3>
+
+<h3>
+<a id="date-2015228" class="anchor" href="#date-2015228" aria-hidden="true"><span class="octicon octicon-link"></span></a>date: "2015/2/28"</h3>
+
+<p><img class="emoji" title=":flushed:" alt=":flushed:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f633.png" height="20" width="20" align="absmiddle">At first, please forgive my poor English expression.</p>
+
+<p>An idea illustrating social network of scientists using R  comes into my mind.  <a href="http://blog.sina.com.cn/s/blog_403aa80a0102vt0j.html">My Blog</a></p>
+
+<p><img src="ScientistNetwork.jpeg" alt="alt text" title="ScientistNetwork">
+In this picture, you could find some funny phenomenons. Such as, some guys whose name are very similar to Rao Y have appeared in this social network. I am not sure whether it results from bugs or it could reveal some facts.</p>
+
+<ul>
+<li>The co-author relationship maybe tell us something about their social network. Thus, I obtained the query result from pubmed with Entrez Programming Utilities. More details about Entrez Programming Utilities, please <a href="http://www.ncbi.nlm.nih.gov/books/NBK25501/">see</a>
+</li>
+</ul>
+
+<p><img src="th-helpeutils-lrg.png" alt="alt text" title="E-utilities"></p>
+
+<ul>
+<li><p>RCurl and XML package were available tools to handle E-utilities in R.</p></li>
+<li><p>Function GraspData was construct to obtain data from pubmed. You can obtain query result for keyword 'Rao Y' <a href="http://en.wikipedia.org/wiki/Rao_Yi">Rao Yi is a Chinese neurobiologist</a> like this:</p></li>
+</ul>
+
+<blockquote>
+<p>keyPerson = "Rao Y"</p>
+
+<p>relationSet = GraspData(keyPerson = keyPerson)</p>
+</blockquote>
+
+<ul>
+<li>After you obtain data, you could process these result using function Construct. We define link between two persons as their names appeared in a same paper. The paper with authors list without key person would be excluded from analysis. The cutoff option mean the links between certain two persons should appears much more times than cutoff times. In this example, all data would be included.</li>
+</ul>
+
+<blockquote>
+<p>relationData = Construct(relationSet = relationSet,cutoff = 0)</p>
+</blockquote>
+
+<ul>
+<li>At last, we displayed their social relationship as a network graph using igraph package in R</li>
+</ul>
+
+<blockquote>
+<p>g = Graph(data = RelationData,keyPerson = keyPerson)</p>
+</blockquote>
+
+<ul>
+<li>Welcome everyone come to contribute your codes to make it more perfect.</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/KehaoWu" class="avatar"><img src="https://avatars1.githubusercontent.com/u/10395054?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/KehaoWu">KehaoWu</a> maintains <a href="https://github.com/KehaoWu/ScientistNetwork">Scientistnetwork</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/KehaoWu/ScientistNetwork/tarball/master" class="tar">tar</a><a href="https://github.com/KehaoWu/ScientistNetwork/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
