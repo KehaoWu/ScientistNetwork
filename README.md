@@ -4,7 +4,7 @@
 
 :flushed:At first, please forgive my poor English expression.
 
-An idea that to illustrate social network of scientists using R  comes into my mind.  [My Blog](http://blog.sina.com.cn/s/blog_403aa80a0102vt0j.html)
+An idea illustrating social network of scientists using R  comes into my mind.  [My Blog](http://blog.sina.com.cn/s/blog_403aa80a0102vt0j.html)
 
 ![alt text](ScientistNetwork.jpeg "ScientistNetwork")
 In this picture, you could find some funny phenomenons. Such as, some guys whose name are very similar to Rao Y have appeared in this social network. I am not sure whether it results from bugs or it could reveal some facts.
